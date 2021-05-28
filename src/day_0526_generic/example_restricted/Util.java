@@ -6,6 +6,6 @@ public class Util {
 		double v2 = t2.doubleValue();
 		System.out.println(v1 + "  " + v2);
 		
-		return Double.compare(v1, v2);
+		return Double.compare(v1, v2); //v1>v1 : 1 , v1<v2 : -1, , v1==v2 : 0
 	}
 }
