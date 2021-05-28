@@ -9,5 +9,7 @@ public class SystemClass {
 	 * 시스템 프로퍼티 읽기
 	 * 환경 변수 읽기
 	 */
-	
+	String osName = System.getProperty("os.name");
+	String userName = System.getProperty("user.name");
+	String userHome = System.getProperty("user.home");
 }
