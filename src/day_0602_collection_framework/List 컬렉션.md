@@ -34,3 +34,26 @@
   * ```java
     List<String> array = Arrays.asList("홍길동","이순신","신사임당");
     ```
+
+## Vector
+
+```java
+List<E> list = new Vector<E>();
+```
+
+* ArrayList와 비슷
+* 동기화된 메소드로 구성됨
+  * 멀티 스레드가 동시에 이 메소드들을 실행할 수 없음
+  * 하나의 스레드가 실행을 완료해야만 다른 스레드를 실행할 수 있다
+    *  멀티 스레드 환경에서 안전하게 객체을 추가,삭제할 수 있다
+
+## LinkedList
+
+```java
+List<E> list = new LinkedList<E>();
+```
+
+* 처음 생성될 때는 어떠한 링크도 만들어지지 않기 때문에 내부는 비어있음
+
+* ArrayList와 사용방법은 똑같지만 내부구조는 완전 다름
+* 인접 참조를 링크해서 체인처럼 관리함
