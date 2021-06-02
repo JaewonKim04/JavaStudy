@@ -1,4 +1,4 @@
-package day_0526_generic.example_extends_generig;
+package day_0526_generic.example_extends_generic;
 
 public class Product<T,M> {
 	private T kind;
@@ -9,6 +9,14 @@ public class Product<T,M> {
 	}
 	public void setM(M model) {
 		this.model = model;
+	}
+	
+	public T getT() {
+		return kind;
+	}
+	
+	public M getM() {
+		return model;
 	}
 
 }

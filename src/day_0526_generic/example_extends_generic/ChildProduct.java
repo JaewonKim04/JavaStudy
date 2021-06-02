@@ -1,4 +1,4 @@
-package day_0526_generic.example_extends_generig;
+package day_0526_generic.example_extends_generic;
 
 public class ChildProduct<T,M,C> extends Product<T,M> {
 	private C company;
