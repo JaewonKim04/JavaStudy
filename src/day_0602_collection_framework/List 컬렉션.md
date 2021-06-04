@@ -57,3 +57,4 @@ List<E> list = new LinkedList<E>();
 
 * ArrayList와 사용방법은 똑같지만 내부구조는 완전 다름
 * 인접 참조를 링크해서 체인처럼 관리함
+

@@ -26,5 +26,16 @@ public class HashSetExample {
 		set.remove("OS");
 		
 		System.out.println("총 객체수: " + set.size());
+		
+		iterator = set.iterator();
+		while(iterator.hasNext()) {
+			String element = iterator.next();
+			System.out.println("\t" + element);
+		}
+		
+		set.clear();
+		if(set.isEmpty()) {
+			System.out.println("비어있음");
+		}
 	}
 }
