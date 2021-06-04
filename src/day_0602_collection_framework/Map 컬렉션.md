@@ -32,3 +32,14 @@
 
     
 
+## HashTable
+
+* HashMap과 동일한 내부 구조를 가지고 있음
+* HashMap과의 차이점: HashTable은 동기화된 메소드로 구성
+
+
+
+## Properties(시험범위 x)
+
+* HashTable의 하위 클래스이기 때문에 HashTable 의 모든 특징을 그대로 갖고있음
+* __키와 값을 String으로 제한한__ 컬렉션
