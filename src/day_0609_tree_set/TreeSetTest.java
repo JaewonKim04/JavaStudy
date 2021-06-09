@@ -19,6 +19,9 @@ public class TreeSetTest {
 		System.out.println("최댓값:"+set.last());
 		System.out.println("6보다 큰값중 최솟값:"+ set.higher(6));
 		System.out.println("20보다 작은값중 최댓값:"+set.lower(20));
+		System.out.println();
+		
+		System.out.println("전체 하니씩 출력");
 		
 		Iterator<Integer> iter = set.iterator();
 		while(iter.hasNext()) {
