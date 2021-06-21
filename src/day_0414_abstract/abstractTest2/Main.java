@@ -1,4 +1,4 @@
-package abstractTest2;
+package day_0414_abstract.abstractTest2;
 
 public class Main {
 	public static void main(String[] args) {
