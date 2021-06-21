@@ -1,4 +1,4 @@
-package day_0421_nested.interfac;
+package day_0421_nested;
 
 public interface Interface {
 	//인터페이스는 클래스와는 달리 다중 상속을 허용한다

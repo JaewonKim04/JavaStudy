@@ -1,4 +1,4 @@
-package day_0423_nested_class.local_static;
+package day_0421_nested._class.local_static;
 
 public class MainTest {
 	public static void main(String[] args) {

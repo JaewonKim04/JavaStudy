@@ -1,4 +1,4 @@
-package day_0423_nested_class.example;
+package day_0421_nested._class.example;
 
 public class Button {
 	interface OnClickListener{

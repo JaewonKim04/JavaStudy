@@ -1,4 +1,4 @@
-package day_0423_nested_class.second.a1;
+package day_0421_nested._class.second.a1;
 
 public class A {
 	class B{}

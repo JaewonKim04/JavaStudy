@@ -1,4 +1,4 @@
-package day_0423_nested_class.base;
+package day_0421_nested._class.base;
 
 public class ClassA {
 	class NestedClass{

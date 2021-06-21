@@ -1,4 +1,4 @@
-package day_0423_nested_class.second.a2;
+package day_0421_nested._class.second.a2;
 
 public class A {
 	int field1;

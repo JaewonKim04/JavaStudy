@@ -1,4 +1,4 @@
-package day_0423_nested_class.local_static;
+package day_0421_nested._class.local_static;
 
 public class A {
 	A(){System.out.println("A 객체가 생성됨");}
