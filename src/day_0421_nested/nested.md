@@ -54,17 +54,23 @@
 
     ```java
     class A{
-      static clas B{//A클래스로 바로 접근 가능
+      static int field;
+      static void method2(){}
+      static class B{//A클래스로 바로 접근 가능
         B(){}
         int field1;
         void method();
         static int field2;
         static void method2(){}
+        field = 3;//바깥 클래스의 정적 필드
+        method2(){}//바깥 클래스의 정적 메소드
       }
     }
     ```
 
     * 정적 필드,메소드 가능
+
+    * 바깥 클래스의 정적 멤버만 사용가능
 
     * ```java
       A.C c = new A.C();
@@ -93,7 +99,17 @@
 
   * 메소드가 실행될 때 메소드 내에서 객체를 생성하고 사용해야함
   * 주로 비동기 처리를 위해 스레드 객체를 만들 때 사용
+  * 바깥 클래스의 필드나 메소드를 제한없이 사용가능
+  * 매소드의 __매개 변수__나 __로컬 변수__를 로컬 클래스에서 사용할 때
+    * __final로 선언된 것만 가능__
+    * Java 8 부터는 final을 붙이지 않아도 final특성을 갖고있음
 
 * 컴파일하면 .class 파일이 별도로 생성
   * __A$B .class__ (A:바깥클래스, B:멤버클래스)
   * __A $1 B .class__
+
+* this키워드를 사용하면 중첩 클래스의 객체 참조
+  * 바깥클래스의 참조를 얻으려면: 바깥클래스.this
+
+## 중첩인터페이스
+
