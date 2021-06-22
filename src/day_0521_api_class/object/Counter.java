@@ -1,4 +1,4 @@
-package day_0514_object;
+package day_0521_api_class.object;
 
 public class Counter {
 	private int no;
