@@ -66,3 +66,52 @@
   ```
 
   
+
+## 제한된 타입 파라미터
+
+* 타입 파라미터 뒤에 extends 키워드 붙이고 상위 타입 명시
+
+  ```java
+  public <T extends 상위타입> 리턴타입 메소드(매개변수){...}
+  ```
+
+* 상위 타입은 인터페이스도 가능(인터페이스도 extends)
+
+* 타입 파라미터(T)에 지정되는 구체적인 타입은 상위 타입이거나 상위 타입의 하위 또는 구현 클래스만 가능
+
+  * ```java
+    class A{
+      void a(){
+        System.out.println("a실행");
+      }
+    }
+    
+    class B extends A{
+      void b(){
+        System.out.println("b실행")
+      }
+    }
+    
+    public class Ex{
+      public static <T extends A> void a(T t){
+        t.a();
+        //t.b(); 
+      }
+      
+      public static void main(String[] args){
+        a(new A());
+        a(new B());
+      }
+    }
+    ```
+
+    
+
+## 와일드카드 타입
+
+* 와일드 카드: __?__
+* 제네릭 타입을 매개값이나 리턴 타입으로 사용할 때 다음과 같이 세 가지 형태로 사용 가능
+  1. 제네릭타입<?>:제한없음
+  2. 제네릭타입<? extends 상위타입>:상위 클래스 제한
+  3. 제네릭타입<? super 하위타입>:하위 클래스 제한
+
