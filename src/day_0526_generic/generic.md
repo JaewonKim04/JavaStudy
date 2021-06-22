@@ -115,3 +115,18 @@
   2. 제네릭타입<? extends 상위타입>:상위 클래스 제한
   3. 제네릭타입<? super 하위타입>:하위 클래스 제한
 
+## 제네릭 타입의 상속과 구현
+
+* Product<T,M>제네릭 타입을 상속해서 ChildProduct<T,M>타입을 정의함
+
+  ```java
+  public class ChildProduct<T,M> extends Product<T,M>{...}
+  ```
+
+* 자식 제네릭 타입은 추가적으로 타입 파라미터를 가질 수 있음
+
+  ```java
+  public class ChildProduct<T,M,C> extends Product<T,M>{...}
+  ```
+
+  
