@@ -84,3 +84,10 @@
   * getProperty():시스템 프로퍼티 읽기
   * Getenv():환경 변수 읽기
 
+## Class 클래스
+
+* 메타데이터를 관리
+  * 메타데이터: 클래스 이름, 생성자 정보, 필드 정보, 메소드 정보
+* __리플렉션(Reflection)__: Class객체를 이용하면 메타데이터를 알아낼 수 있음
+  * getDeclaredConstructors(),getDeclaredFields(),getDeclaredMethods()제공
+
