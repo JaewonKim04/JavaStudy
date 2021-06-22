@@ -1,4 +1,4 @@
-package day_0512_exception.throw_;
+package day_0507_exception.throw_trycatch.throw_;
 
 public class Throw {
 	//예외 떠넘기기

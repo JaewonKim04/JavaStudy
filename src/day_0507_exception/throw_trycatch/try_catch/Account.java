@@ -1,4 +1,4 @@
-package day_0512_exception.account;
+package day_0507_exception.throw_trycatch.try_catch;
 
 public class Account {
 	private long balance;
