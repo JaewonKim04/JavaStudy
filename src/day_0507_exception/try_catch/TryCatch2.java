@@ -9,7 +9,6 @@ public class TryCatch2 {
 			data1 = args[1];
 		}catch(ArrayIndexOutOfBoundsException e) {
 			System.out.println("실행 매개값의 수가 부족합니다.");
-			return;
 		}
 		
 		//다중 catch
