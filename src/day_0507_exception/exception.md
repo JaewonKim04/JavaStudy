@@ -91,3 +91,30 @@
 
 ## 사용자 정의 예외와 예외 발생
 
+```java
+public class ???Exception extends Exception|RuntimeException{
+  public ???Exception () {}
+  public ???Exception (String message) {super(message);}
+}
+```
+
+* 클래스 이름은 Exception으로 끝나는 것이 좋음
+* 대부분 생성자 선언만을 포함
+* 생성자는 두 개를 선언하는것이 일반적
+
+### 예외 발생시키기
+
+```java
+throw new ???Exception();
+throw new ???Exception("메시지");
+```
+
+* 대부분 자신을 호출한 곳에서 예외를 처리하도록 throws키워드로 예외를 떠넘김
+
+## 예외 정보 얻기
+
+* 예외 객체를 catch블록의 매개 변수에서 참조하게 되므로 매개 변수를 이용하면 예외 객체의 정보를 알 수 있다
+* Exception 클래스를 상속하기 때문에 Exception이 가지고 있는 메소드들은 모든 객체에서 호출 가능
+  * 가장 많이 호출되는 메소드
+  * __getMessage()__:예외 메시지는 catch 블록에서 getMessage()메소드의 리턴값으로 얻을 수 있음
+  * __pringStackTrace()__:예외 발생 코드를 추적해서 모두 콘솔에 출력
