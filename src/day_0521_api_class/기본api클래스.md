@@ -91,3 +91,33 @@
 * __리플렉션(Reflection)__: Class객체를 이용하면 메타데이터를 알아낼 수 있음
   * getDeclaredConstructors(),getDeclaredFields(),getDeclaredMethods()제공
 
+## Wrapper 클래스
+
+* __포장 객체__: 기본 타입의 값을 내부에 두고 포장한 객체
+
+  * 기본 타입 값은 외부에서 변경 불가
+
+  * __박싱__: 기본 타입의 값을 포장 객체로 만드는 과정
+
+    * ```java
+      Byte obj = new Byte(10);//기본 타입의 값을 줄 경우
+      Byte obj = new Byte("10");//문자열을 줄 경우
+      
+      Integer obj = Integer.valueOf(1000);//정적 valueOf()메소드 사용
+      
+      Integer obj = 100;//자동 박싱
+      ```
+
+  * __언박싱__: 포장 객체에서 기본 타입의 값을 얻어내는 과정
+
+    * ```java
+      byte num = obj.byteValue();//기본타입명+Value() 메소드 호출
+      
+      Integer obj = new Integer(200);
+      int value1 = obj;//
+      int value2 = obj + 100;//자동 언박싱
+      ```
+
+* "parse+기본타입"명으로 되어있는 정적 메소드를 이용해 문자열을 기본 타입 값으로 변환할 수 있다
+* 포장클래스의 __equals()__
+  * 내부의 값을 비교하도록 오버라이딩 되어있음
