@@ -7,13 +7,13 @@ interface B{
 
 public class A {
     public static void main(String[] args){
-        B b = (x,y) -> {return x+y;};
+        B b = Integer::sum;
         System.out.println(b.run(5,7));
 
-        b = (x,y) -> x+y;
+        b = Integer::sum;
         System.out.println(b.run(5,5));
 
-        b = (x,y)->sum(x,y);
+        b = A::sum;
         System.out.println(b.run(3,2));
     }
     public static int sum(int x,int y){
