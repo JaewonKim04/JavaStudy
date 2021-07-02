@@ -1,4 +1,4 @@
-package day_0702_labda.lambdatest;
+package day_0702_lambda.lambdatest;
 
 @FunctionalInterface
 interface B{

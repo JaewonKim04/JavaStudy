@@ -1,4 +1,4 @@
-package day_0702_labda.expressions;
+package day_0702_lambda.expressions;
 
 import java.util.function.IntBinaryOperator;
 
@@ -16,5 +16,8 @@ public class MethodReferencesExample {
         Calculator obj = new Calculator();
         operator = (x, y) -> obj.instanceMethod(x, y);
         System.out.println("결과3: " + operator.applyAsInt(5, 6));
+
+        operator = obj::instanceMethod;
+        System.out.println("결과4: " + operator.applyAsInt(7, 8));
     }
 }

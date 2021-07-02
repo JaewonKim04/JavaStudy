@@ -1,4 +1,4 @@
-package day_0702_labda.expressions;
+package day_0702_lambda.expressions;
 
 public class Calculator {
 
